@@ -15,7 +15,7 @@
     <h3 class="text-center text-info">Delete</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="myname" id="username" class="form-control" required>
+                                <input type="text" name="myname" id="username" placeholder="Enter Username" class="form-control" required>
                             </div>
                             
                             

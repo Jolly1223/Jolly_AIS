@@ -60,15 +60,15 @@ $conn->close();
                     <h3 class="text-center text-info">UPDATE</h3>
                     <div class="form-group">
                         <label for="username" class="text-info">New Username:</label><br>
-                        <input type="text" name="myname" id="username" class="form-control" required>
+                        <input type="text" name="myname" id="username" placeholder="Enter New username" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="password" class="text-info">New Password:</label><br>
-                        <input type="password" name="myPass" id="password" class="form-control"required>
+                        <input type="password" name="myPass" id="password" placeholder="Enter New Password" class="form-control"required>
                     </div>
                     <div class="form-group">
                         <label for="username" class="text-info">New Email:</label><br>
-                        <input type="text" name="myEmail" id="username" class="form-control"required>
+                        <input type="text" name="myEmail" id="username" placeholder="Enter New Email" class="form-control"required>
                     </div>
                     <div class="form-group">
 

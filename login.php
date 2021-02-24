@@ -26,15 +26,15 @@
                             <h3 class="text-center text-info">REGISTER</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="myname" id="username" class="form-control" required>
+                                <input type="text" name="myname" id="username" placeholder="Enter Name" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
-                                <input type="password" name="myPass" id="password" class="form-control"required>
+                                <input type="password" name="myPass" id="password" placeholder="Enter Password" class="form-control"required>
                             </div>
                             <div class="form-group">
                                 <label for="username" class="text-info">Email:</label><br>
-                                <input type="text" name="myEmail" id="username" class="form-control"required>
+                                <input type="text" name="myEmail" id="username" placeholder="Enter Email"class="form-control"required>
                             </div>
                             <div class="form-group">
     
