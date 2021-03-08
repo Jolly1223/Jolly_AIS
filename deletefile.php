@@ -1,29 +1,15 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "crud";
+include_once'Login_transition.php';
 
-$userN = $_GET['myname'];
+$ID = $_GET["UserID"];
 
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-
-$sql = "DELETE FROM Users_db WHERE Username ='".$userN."'";
-
-
-
-
+$sql = "DELETE FROM users_db WHERE UserID ='".$ID."'";
 
 
 if ($conn->query($sql) === TRUE) {
   header('Location: display.php');
+  echo "True";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

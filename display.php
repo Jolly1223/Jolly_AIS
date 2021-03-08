@@ -4,6 +4,7 @@ include "Login_transition.php";
 
 $sql = "SELECT UserID, Username, Password, Email FROM Users_db";
 $result = $conn->query($sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +39,8 @@ $result = $conn->query($sql);
                 <td><?php echo $row['Username'];?></td>
                 <td><?php echo $row['Email'];?></td>
                 <td><a class="btn btn-info" href="update.php?UserID=<?php echo $row['UserID']; ?>">Update</a>
-                <a class="btn btn-danger" href="delete.php?UserID=<?php echo $row['UserID']; ?>">Delete</a></td>
+                <a class="btn btn-danger" href="deletefile.php?UserID=<?php echo $row['UserID']; ?>">Delete</a></td>
+    
                 </tr>
 
         <?php        }

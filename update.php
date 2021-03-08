@@ -1,19 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "crud";
+include_once 'Login_transition.php';
 
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$sql = "SELECT * FROM Users_db WHERE UserID =".$_GET['UserID']."";
+$result = $conn->query($sql);
+if($result){
+    $row = $row = $result->fetch_assoc();
 }
-
-
-
 if(isset($_POST["submit"])){
     
 $userN = $_POST["myname"];
@@ -60,7 +52,7 @@ $conn->close();
                     <h3 class="text-center text-info">UPDATE</h3>
                     <div class="form-group">
                         <label for="username" class="text-info">New Username:</label><br>
-                        <input type="text" name="myname" id="username" placeholder="Enter New username" class="form-control" required>
+                        <input type="text" name="myname" id="username" value ="<?php echo $row['Username'];?>"class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="password" class="text-info">New Password:</label><br>
